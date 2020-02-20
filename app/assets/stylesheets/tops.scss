@@ -1,0 +1,87 @@
+// Place all the styles related to the tops controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background-image: url("index.jpg");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+}
+
+.top {
+  height: 100px;
+  width: 100vw;
+  position: relative;
+
+  .header {
+    height: 60px;
+    width: calc(100vw - 120px);
+    margin: 10px 10px;
+    background-color:white;
+    position: absolute;
+
+    .title {
+      float: left;
+    }
+    .login {
+      float: right;
+      
+    }
+  }
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+
+  .left {
+    height: 900px;
+    width: 500px;
+
+    .window {
+      height: calc(900px - 800px);
+      width: calc(500px - 100px);
+      background-color: white;
+      margin: 30px auto;
+
+      .検索 {
+
+      }
+      .ボタン {
+
+      }
+
+    }
+
+    .bar {
+      height: calc(900px - 200px);
+      width: calc(500px - 100px);
+      background-color: white;
+      margin: 0 auto;
+
+      .content {
+
+      }
+    }
+  }
+
+  .right {
+    height: 900px;
+    width: 900px;
+    background-color: white;
+
+    .frame {
+      height: 700px;
+      width: 700px;
+      background-color: white;
+
+      #map {
+        display: block;
+        margin: 10px 10px;
+        height: 700px;
+        width: 700px;
+      }
+    }
+  }
+}
