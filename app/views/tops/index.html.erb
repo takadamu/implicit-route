@@ -1,28 +1,18 @@
 <!DOCTYPE html>
-<html lang="ja">
-
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-<title>Implicit route</title>
-
-<script src="http://maps.google.com/maps/api/js?key=AIzaSyCfMCVUDdbD_8zFBkzlCFKZT2GnB3yJnFQ&language=ja"></script>
-
-<style>
-html { height: 100% }
-body { height: 100% }
-#map { height: 100%; width: 100%}
-</style>
-</head>
-
 
 <body>
 
+<script src="http://maps.google.com/maps/api/js?key=AIzaSyCfMCVUDdbD_8zFBkzlCFKZT2GnB3yJnFQ&language=ja"></script>
+
+
   <div class="top">
+    <div class="menu">
+      <%= link_to "新規登録", new_user_path, class: "register"%>
+      <%= link_to "LOGIN", new_post_path, class: "login"%>
 
     <div class="header">
-      <div class="title">暗黙のルート</div>
-      <div class="login">ろぐいん</div>
+      <div class="title"><p>暗 黙 の route</p></div>
+      </div>
     </div>
   </div>
 
@@ -48,6 +38,10 @@ body { height: 100% }
       </div>
     </div>
 
+      <style>
+        #map { height: 100%; width: 100%}
+      </style>
+
       <script>
       var MyLatLng = new google.maps.LatLng(35.6811673, 139.7670516);
       var Options = {
@@ -58,7 +52,19 @@ body { height: 100% }
       var map = new google.maps.Map(document.getElementById('map'), Options);
       </script>
 
+    <div class="info">
+      <div class="twitter">
+      </div>
+      <div class="doratora">
+      </div>
+
+    </div>
+
   </div>
-</div>
+
+  <div class="footer">
+    <p>Copyright Implicit-route 2020.</p>
+  </div>
+
 </body>
 </html>

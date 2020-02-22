@@ -1,0 +1,19 @@
+<div class="sign_up">
+  <%= form_for @user do |f| %>
+    <p>
+    <%= f.label :name, "にっくねーむ" %>
+    <%= f.text_field :name %>
+    </p>
+    <p>
+    <%= f.label :password, "ぱすわーど" %>
+    <%= f.text_field :password %>
+    </p>
+    <p>
+    <%= f.label :password_confirmation, "ぱすわーど確認" %>
+    <%= f.text_field :password_confirmation %>
+    </p>
+    <%= f.submit "登録！"%>
+
+    <%= link_to "戻る", root_path %>
+
+    <% end %>

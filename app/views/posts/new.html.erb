@@ -1,0 +1,16 @@
+<div class="new-post">
+  <div class="contents">
+    <div class="form">
+      <%= form_with(model: @post, local: true) do |form| %>
+        <h3>
+          投稿する
+        </h3>
+        <%= form.text_field :title, placeholder: "Title" %>
+        <%= form.text_area :content, placeholder: "内容を入力して下さい", rows:"10" %>
+        <%= form.text_field :image, placeholder: "image"%>
+        <%= form.submit "投稿！" %>
+
+        <%= link_to "TOPページに戻る", root_path %>
+      <% end %>
+    </div>
+  </div>
