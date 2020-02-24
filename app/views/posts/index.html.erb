@@ -1,0 +1,15 @@
+<div class="existing">
+  <% @posts.each do |post| %>
+    <div class="contents">
+      <div class="list">
+        <div class="lists">
+          <%= link_to post.title, post_path(post.id), class: "lists_title" %>
+        </div>
+        <div class="bottom">
+          <div class="date">
+            <%= post.created_at %>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>

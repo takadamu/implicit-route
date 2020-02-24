@@ -1,0 +1,252 @@
+// Place all the styles related to the tops controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background-image: url("index.jpg");
+  height: 100vh;
+  width: 100vw;
+
+// ーーーーーーーーー トップページ開始 ーーーーーーーーーー
+
+  .top {
+    height: 200px;
+    width: 100vw;
+    position: relative;
+
+    .menu {
+      height: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 50px;
+
+      .menu-left {
+        height: 100%;
+        width: 12.5%;
+        margin-left: 20px;
+        padding-top: 10px;
+
+
+        .register {
+          color: black;
+          text-decoration: none;
+          font-size: 50px;
+          font-family: "masasi";
+          float: right;
+          border: 7px solid #ccc;
+          background-color: rgba($color: rgb(255, 255, 255), $alpha: 1);
+          border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
+        }
+      }
+
+      .menu-right {
+        height: 100%;
+        width: 12.5%;
+        margin-right: 20px;
+        padding-top: 10px;
+
+        .login {
+          color: black;
+          text-align: center;
+          text-decoration: none;
+          font-size: 50px;
+          font-family: "masasi";
+          float: right;
+          border: 7px solid #ccc;
+          background-color: rgba($color: rgb(255, 255, 255), $alpha: 1);
+          border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
+        }
+      }
+    }
+
+    .header {
+      height: 150px;
+      width: 80%;
+      margin: 20px 0;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      border-radius: 10px; 
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+
+      .title {
+        text-align: center;
+        font-size: 100px;
+        padding: 0 100px;
+        font-family: "masasi";
+
+        p {
+          display:  block;                /* ブロック要素にする */
+          position:  relative;            /* 位置指定 */
+          animation: anime1 3s ease;      /* アニメーション指定 */  
+          border: 7px solid #ccc;
+          background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.9);
+          // background-color: white;
+          border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
+        }
+        
+        @keyframes anime1 {
+          0% {
+            opacity:  0;                /* 透明度指定 */
+            top: 300px;                  /* 位置指定 */
+          }
+          100% {
+            opacity:  1;                /* 透明度指定 */
+            top: 0;                     /* 位置指定 */
+          }
+        }
+      }
+    }
+  }
+
+  .main {
+    height: calc(100vh - 230px);
+    width: 100%;
+    display: flex;
+
+    .left {
+      height: 100%;
+      width: calc(100% - 78%);
+
+      .window {
+        height: calc(100% - 90%);
+        width: calc(100% - 13%);
+        margin: auto;
+        border: 7px solid #ccc;
+        background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.9);
+        border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
+        display: flex;
+
+        .search-w {
+          height: 70%;
+          line-height: 70%;
+          width: 70%;
+          background-color: black;
+          float: left;
+          margin: auto;
+
+        }
+        .btn-w {
+          height: 70%;
+          width: 20%;
+          background-color: red;
+          float: right;
+          margin: auto;
+        }
+
+      }
+
+      .bar {
+        height: calc(100% - 19%);
+        width: calc(100% - 13%);
+        margin: 10px auto;
+        border: 7px solid #ccc;
+        background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.9);
+        border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
+
+        .content {
+          height: 90%;
+          width: 90%;
+          background-color: yellow;
+          margin: 0 auto;
+          // line-height: 90%;
+        }
+      }
+    }
+
+    .right {
+      height: calc(100% - 8%);
+      width: calc(100% - 40%);
+      background-color: white;
+      // border-radius: 10px; 
+      // -webkit-border-radius: 10px;
+      // -moz-border-radius: 10px;
+      margin: auto;
+      margin-top: 15px;
+      border: 7px solid #ccc;
+      background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.9);
+      border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
+
+      .frame {
+        height: 100%;
+        width: 100%;
+        display: flex;
+
+        #map {
+          display: block;
+          height: calc(100% - 5%);
+          width: calc(100% - 5%);
+          margin: auto;
+          border-radius: 10px; 
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+        }
+      }
+    }
+
+
+   .info {
+    height: calc(100% - 17%);
+    width: calc(100% - 92%);
+    background-color: white;
+    background-color:rgba(255,255,255,0.7);
+    // border-radius: 10px; 
+    // -webkit-border-radius: 10px;
+    // -moz-border-radius: 10px;
+    margin: 50px auto;
+    margin-left: 10px;
+    border: 7px solid #ccc;
+    background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.9);
+    border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
+
+     .twitter {
+      height: 30%;
+      width: 30%;
+      color: blue;
+      margin: 20px auto;
+
+      a {
+        height: 100%;
+        width: 100%;
+        .btn_icon {
+          height: 100%;
+          width: 100%; 
+        }
+      }
+
+     }
+     .doratora {
+      height: 30%;
+      width: 30%;
+      background-color: green;
+      margin: 20px auto;
+     }
+   }
+  }
+
+
+  // ーーーーーーーーー フッター開始 ーーーーーーーーーー
+
+  .footer {
+    bottom: 0;
+    height: 20px;
+    width: 100vw;
+    display: flex;
+    background: radial-gradient(ellipse at center, rgba(255,255,255,0) 40%,rgba(255,255,255,0.5) 60%,rgba(255,255,255,1) 100%);
+    
+    p {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+}
+
+// ーーーーーーーーー フッター終了 ーーーーーーーーーー
+
+// ーーーーーーーーー トップページ終了 ーーーーーーーーーー

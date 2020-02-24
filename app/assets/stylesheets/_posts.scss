@@ -1,0 +1,94 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+// ーーーーーーーーー 新規投稿開始 ーーーーーーーーーー
+
+.new-post {
+  height: calc(100vh - 200px);
+  width: 100vw;
+  display: flex;
+
+  .contents{
+    background-color: #fff;
+    height: calc(100% - 10%);
+    width: calc(100% - 30%);
+    overflow: scroll;
+    margin: 0 auto;
+    background-color:rgba(255,255,255,0.8);
+    border-radius: 10px; 
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+
+    .form {
+      width: 95%;
+      height: 100%;
+      padding: 30px;
+      overflow: scroll;
+      display: grid;
+
+      h3 {
+        display: block;
+        text-align: center;
+        font-size: 120px;
+        font-family: "masasi";
+      }
+      input {
+        height: 50px;
+        margin: 10px 0;
+
+      }
+      .content {
+
+      }
+      .image {
+
+      }
+
+      .btn {
+        text-align: center;
+        font-size: 80px;
+        font-family: "masasi";
+        color: black;
+      }
+    }
+  }
+}
+
+// ーーーーーーーーー 新規投稿終了 ーーーーーーーーーー
+
+// ーーーーーーーーー 投稿一覧開始 ーーーーーーーーーー
+
+.existing {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+
+  .contents{
+    background-color: #fff;
+    height: calc(100vh - 20%);
+    width: calc(100vw - 20%);
+    overflow: scroll;
+    margin: auto;
+    background-color:rgba(255,255,255,0.8);
+    border-radius: 10px; 
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+
+    .list {
+      
+      .lists {
+
+      }
+      .bottom {
+        .date {
+
+        }
+      }
+    }
+
+  }
+}
+
+// ーーーーーーーーー 投稿一覧終了 ーーーーーーーーーー

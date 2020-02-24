@@ -10,6 +10,35 @@
   </head>
 
   <body>
+
+
+  <div class="top">
+    <% if user_signed_in? %>
+        <div class="menu">
+          <div class="menu-left">
+          <%= link_to "とうこう", new_post_path, class: "register"%>
+          </div>
+          <div class="menu-right">
+          <%= link_to "ろぐ<br>あうと👋", destroy_user_session_path, class: "login", method: :delete%>
+          </div>
+      </div>
+    <% else %>
+        <div class="menu">
+          <div class="menu-left">
+          <%= link_to "とーろく", new_user_path, class: "register"%>
+          </div>
+          <div class="menu-right">
+          <%= link_to "ろぐいん", new_user_session_path, class: "login"%>
+          </div>
+        </div>
+    <% end%>
+
+    <div class="header">
+      <div class="title"><p>あんもく の ルート 😘</p></div>
+    </div>
+  </div>
+
     <%= yield %>
+
   </body>
 </html>

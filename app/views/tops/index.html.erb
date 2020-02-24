@@ -4,30 +4,20 @@
 
 <script src="http://maps.google.com/maps/api/js?key=AIzaSyCfMCVUDdbD_8zFBkzlCFKZT2GnB3yJnFQ&language=ja"></script>
 
-
-  <div class="top">
-    <div class="menu">
-      <%= link_to "新規登録", new_user_path, class: "register"%>
-      <%= link_to "LOGIN", new_post_path, class: "login"%>
-
-    <div class="header">
-      <div class="title"><p>暗 黙 の route</p></div>
-      </div>
-    </div>
-  </div>
-
   <div class="main">
-
     <div class="left">
       <div class="window">
-      検索窓表示
-        <div class="検索窓"></div>
-        <div class="ボタン"></div>
+        <div class="search-w"></div>
+          
+        <div class="btn-w"></div>
       </div>
 
       <div class="bar">
-      検索結果表示
         <div class="content">
+          <% @posts.each do |post|%>
+            <p><%= post.title%></p>
+            <p><%= post.created_at%></p>
+          <% end %>  
         </div>
       </div>
     </div>
@@ -54,6 +44,9 @@
 
     <div class="info">
       <div class="twitter">
+        <%= link_to "https://twitter.com/jartic?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor", class: "btn" do %>
+          <%= icon('fab', 'twitter', class: "btn_icon") %>
+          <% end %>
       </div>
       <div class="doratora">
       </div>
