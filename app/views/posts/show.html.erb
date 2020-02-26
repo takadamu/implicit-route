@@ -1,15 +1,23 @@
-<div class="postTitle">
-  <%= @post.title %>
-</div>
-<div class="postDate">
-  <%= @post.created_at %>
-</div>
-<div class="postAuthor">
-</div>
-<div class="postManage">
-  <%= link_to "編集", edit_post_path(@post.id), class: "postManage__edit" %>
-  <%= link_to "削除", post_path(@post.id), method: :delete, class: "postManage__delete" %>
-</div>
-<div class="postText">
-  <%= simple_format @post.content %>
+<div class="content-post">
+  <div class="more">
+    <div class="more-cont">
+      <h3><%= simple_format(@post.title) %></h3>
+      <%= simple_format(@post.content) %>
+      <%= simple_format(@post.image) %>
+      <ul class="more-list">
+          <% if user_signed_in? && current_user.id == @post.user_id %>
+        <li>
+          <%= link_to '編集', "/posts/#{@post.id}/edit", method: :get %>
+        </li>
+        <li>
+          <%= link_to '削除', "/posts/#{@post.id}", method: :delete %>
+        </li>
+        <% end %>
+      </ul>
+      <span class="name">
+        <span>投稿者👉</span><%= @post.user.name %>
+      </span>
+      <%= link_to "とっぷぺーじにもどる？🗿", root_path, class: "btn" %>
+    </div>
+  </div>
 </div>

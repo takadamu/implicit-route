@@ -5,27 +5,90 @@
 // ーーーーーーーーー 新規登録開始 ーーーーーーーーーー
 
 .sign_up {
-  height: 100vh;
+  height: calc(100vh - 200px);
   width: 100vw;
-  position: relative;
+  display: flex;
+  color: black;
 
-  .new_user {
-    height: calc(100vh - 10%);
-    width: calc(100vw - 10%);
-    background-color: white;
-    opacity: 0.55;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
+  .contents{
+    background-color: #fff;
+    height: calc(100% - 10%);
+    width: calc(100% - 30%);
+    overflow: scroll;
+    margin: 0 auto;
+    background-color:rgba(255,255,255,0.8);
     border-radius: 10px; 
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
 
-    p {
-      height: 50px;
+    .form {
+      width: 95%;
+      height: 100%;
+      padding: 30px;
+      overflow: scroll;
+      display: grid;
+
+      h3 {
+        display: block;
+        text-align: center;
+        font-size: 100px;
+        margin-bottom: 30px;
+        font-family: "masasi";
+      }
+      .field {
+        height: 100px;
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+
+        label {
+          display: block;
+          font-size: 40px;
+          font-family: "masasi";
+        }
+
+        input {
+          width: 500px;
+          height: 38px;
+          font-size: 30px;
+          margin: 0 auto;
+          box-shadow: 4px 4px;
+        }
+      }
+      .actions {
+        height: 50px;
+        width: 100%;
+        padding-top: 20px;
+
+        input {
+          padding: 15px 40px;
+          font-size: 1.2em;
+          background-color: #000;
+          color: #fff;
+          border-style: none;
+          font-family: "takashi";
+          border-radius: 50px;
+
+        }
+        
+      }
+      .btn {
+        font-size: 30px;
+        font-family: "masasi";
+        color: black;
+        float: right;
+        text-decoration: none;
+        background-color: rgb(219, 219, 219);
+        border-radius: 20px;
+        padding: 10px;
+        box-shadow: 4px 4px;
+      }
+
+      .btn:active {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+      }
     }
   }
 }

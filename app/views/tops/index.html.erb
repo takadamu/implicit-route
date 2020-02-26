@@ -7,17 +7,27 @@
   <div class="main">
     <div class="left">
       <div class="window">
-        <div class="search-w"></div>
-          
-        <div class="btn-w"></div>
+        <div class="search-w">
+        <%= form_with(url: search_posts_path, local: true, method: :get, class: "search-form") do |form| %>
+          <%= form.text_field :keyword, placeholder: "とうこうけんさくしよかー", class: "search-input" %>
+          <%= form.submit "検索", class: "search-btn" %>
+        <% end %>
+        </div>
       </div>
 
       <div class="bar">
         <div class="content">
-          <% @posts.each do |post|%>
-            <p><%= post.title%></p>
-            <p><%= post.created_at%></p>
-          <% end %>  
+          <div class="contents">
+            
+            <% @posts.each do |post|%>
+              <%= link_to "/posts/#{post.id}", method: :get do%>
+                <div class="routelist">
+                  <p><%= post.title%></p>
+                  <p><%= post.created_at%></p>
+                </div>
+              <% end %>
+            <% end %>  
+          </div>
         </div>
       </div>
     </div>
@@ -28,29 +38,38 @@
       </div>
     </div>
 
-      <style>
-        #map { height: 100%; width: 100%}
-      </style>
-
       <script>
-      var MyLatLng = new google.maps.LatLng(35.6811673, 139.7670516);
-      var Options = {
-      zoom: 15,      //地図の縮尺値
-      center: MyLatLng,    //地図の中心座標
-      mapTypeId: 'roadmap'   //地図の種類
-      };
-      var map = new google.maps.Map(document.getElementById('map'), Options);
+        var MyLatLng = new google.maps.LatLng(35.6811673, 139.7670516);
+        var Options = {
+        zoom: 15,      //地図の縮尺値
+        center: MyLatLng,    //地図の中心座標
+        mapTypeId: 'roadmap'   //地図の種類
+        };
+        var map = new google.maps.Map(document.getElementById('map'), Options);
       </script>
 
     <div class="info">
+      <p>どうろ<br>じょーほー<br>とか</p>
       <div class="twitter">
-        <%= link_to "https://twitter.com/jartic?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor", class: "btn" do %>
-          <%= icon('fab', 'twitter', class: "btn_icon") %>
-          <% end %>
+        <%= link_to "https://twitter.com/jartic?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" do %>
+          <i class="fab fa-twitter faa-wrench animated", style="color:deepskyblue;"></i>
+        <% end %>
       </div>
       <div class="doratora">
+        <%= link_to "https://www.drivetraffic.jp/" do %>
+          <i class="fas fa-car faa-ring animated", style="color:yellowgreen;"></i>
+        <% end %>
       </div>
-
+      <div class="travel">
+        <%= link_to "https://www.booking.com/index.ja.html?label=gen173nr-1BCAEoggI46AdIM1gEaHWIAQGYARW4AQfIAQzYAQHoAQGIAgGoAgO4AqbEhuYFwAIB;sid=6c87fc488740db3e2f71ef74785fcf99;keep_landing=1&sb_price_type=total&" do %>
+          <i class="fas fa-plane faa-passing animated", style="color:darkgray;"></i>
+        <% end %>
+      </div>
+            <div class="clash">
+        <%= link_to "https://jaf.or.jp/common/about-road-service/estimate-costs" do %>
+          <i class="fas fa-car-crash faa-burst animated", style="color:crimson;"></i>
+        <% end %>
+      </div>
     </div>
 
   </div>

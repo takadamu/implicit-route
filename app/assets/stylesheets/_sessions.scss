@@ -1,7 +1,10 @@
+// ーーーーーーーーー ログイン開始 ーーーーーーーーーー
+
 .sign_in {
   height: calc(100vh - 200px);
   width: 100vw;
   display: flex;
+  color: black;
 
   .contents{
     background-color: #fff;
@@ -24,17 +27,70 @@
       h3 {
         display: block;
         text-align: center;
-        font-size: 120px;
+        font-size: 100px;
+        margin-bottom: 30px;
         font-family: "masasi";
       }
       .field {
-        height: 50px;
-        margin: 10px 0;
+        height: 100px;
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 20px;
 
+        label {
+          display: block;
+          font-size: 40px;
+          font-family: "masasi";
+        }
+
+        input {
+          width: 500px;
+          height: 38px;
+          font-size: 30px;
+          margin: 0 auto;
+          box-shadow: 4px 4px;
+
+          input#user_remember_me {
+            text-decoration: none;
+          }
+        }
       }
-      .action {
+      .actions {
+        height: 50px;
+        width: 100%;
+        padding-top: 20px;
 
+        input {
+          padding: 15px 40px;
+          font-size: 1.2em;
+          background-color: #000;
+          color: #fff;
+          border-style: none;
+          font-family: "takashi";
+          border-radius: 50px;
+
+        }
+        
+      }
+      .btn {
+        font-size: 30px;
+        font-family: "masasi";
+        color: black;
+        float: right;
+        text-decoration: none;
+        background-color: rgb(219, 219, 219);
+        border-radius: 20px;
+        padding: 10px;
+        box-shadow: 4px 4px;
+      }
+      
+      .btn:active {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
       }
     }
   }
 }
+
+// ーーーーーーーーー ログイン終了 ーーーーーーーーーー

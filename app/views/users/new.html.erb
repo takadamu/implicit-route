@@ -1,20 +1,30 @@
 <div class="sign_up">
-  <%= form_for @user do |f| %>
+  <div class="contents">
+    <div class="form">
+      <%= form_for @user do |f| %>
+        <h3>
+          とーろく🗿
+        </h3>
+      <div class="field">
+        <%= f.label :name, "おなまえ" %><br/>
+        <%= f.text_field :name %>
+      </div>
+      <div class="field">
+        <%= f.label :email, "いーめーる" %><br/>
+        <%= f.text_field :email %>
+        </div>
+      <div class="field">
+        <%= f.label :password, "ぱすわーど" %><br/>
+        <%= f.text_field :password %>
+      </div>
+      <div class="field">
+        <%= f.label :password_confirmation, "ぱすわーどかくにん！" %><br/>
+        <%= f.text_field :password_confirmation %>
+      </div>
 
-    <p>
-    <%= f.label :email, "いーめーる" %>
-    <%= f.text_field :email %>
-    </p>
-    <p>
-    <%= f.label :password, "ぱすわーど" %>
-    <%= f.text_field :password %>
-    </p>
-    <p>
-    <%= f.label :password_confirmation, "ぱすわーど確認" %>
-    <%= f.text_field :password_confirmation %>
-    </p>
-    <%= f.submit "登録！"%>
+      <div class="actions">
+        <%= f.submit "とうろぐ！"%>
+      </div>
 
-    <%= link_to "戻る", root_path %>
-
+      <%= link_to "とっぷぺーじにもどる？🗿", root_path, class: "btn" %>
     <% end %>

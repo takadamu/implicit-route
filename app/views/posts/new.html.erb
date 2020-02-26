@@ -6,12 +6,12 @@
           とうこうする？
         </h3>
       <div class="form">
-        <%= form.text_field :title, placeholder: "Title" %>
-        <%= form.text_area :content, placeholder: "内容を入力して下さい", rows:"50" %>
-        <%= form.text_field :image, placeholder: "image"%>
-        <%= form.submit "投稿！" %>
+        <%= form.text_field :title, placeholder: "たいとる" %>
+        <%= form.text_area :content, placeholder: "ごせつめいねがう", rows:"50" %>
+        <%= form.file_field :image, placeholder: "image" %>
+        <%= form.submit "とーこーする！", class: "subbtn" %>
 
-        <%= link_to "とっぷぺーじにもどる", root_path, class: "btn" %>
+        <%= link_to "とっぷぺーじにもどる？🗿", root_path, class: "btn" %>
       <% end %>
       </div>
     </div>

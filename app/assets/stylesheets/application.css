@@ -14,10 +14,12 @@
  *= require_self
  */
 
-@import "reset.css";
+@import "reset";
+@import "design";
 @import "font";
 @import "font-awesome-sprockets";
 @import "font-awesome";
 @import "tops";
 @import "users";
 @import "posts";
+@import "sessions";

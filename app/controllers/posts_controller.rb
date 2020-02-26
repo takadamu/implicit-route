@@ -17,6 +17,10 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
   end
 
+  def search
+    @posts = Post.search(params[:keyword])
+  end
+
   def edit
     @post = Post.find(params[:id])
   end
