@@ -34,6 +34,14 @@
         font-size: 120px;
         font-family: "masasi";
       }
+    }
+
+    .form-area {
+      width: 95%;
+      height: 100%;
+      padding: 30px;
+      overflow: scroll;
+      display: grid;
 
       // タイトル
       input {
@@ -148,14 +156,14 @@
       img {
         width: 50%;
         width: 50%;
-        margin-left: 10px;
+        margin: 30px;
       }
 
       h3 {
         display: block;
         text-align: center;
         border-bottom: dashed 2px #fff;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         font-weight: bold;
         text-shadow: 5px 5px 1px #999999;
 
@@ -166,7 +174,7 @@
 
       p {
         font-size: 25px;
-        margin-left: 10px;
+        margin-left: 20px;
         padding: 10px;
         color: black;
 
@@ -203,6 +211,15 @@
         transform: translateY(2px);
         box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
       }
+
+      ul {
+        display: flex;
+
+        li {
+
+        }
+      }
+
     }
   }
 }
@@ -227,36 +244,62 @@
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
 
-    h1 {
-      font-family: "masasi";
-      font-size: 100px;
-      text-align: center;
-      margin-top: 30px;
-    }
-
     .more-cont {
       width: 95%;
       height: 100%;
       padding: 30px;
       overflow: scroll;
+      display: grid;
 
-      .form__title {
-        width: 95%;
+      h1 {
         display: block;
         text-align: center;
-        font-size: 50px;
+        font-size: 100px;
+        font-family: "masasi";
       }
+    }
+
+    .more-list {
+      width: 95%;
+      height: 100%;
+      padding: 30px;
+      overflow: scroll;
+      display: grid;
+
+      // タイトル
       input {
         height: 40px;
         margin: 10px 0;
         padding: 10px;
         color: black;
-
       }
+      input::-webkit-input-placeholder {
+        font-family: "masasi";
+      }
+      input:-ms-input-placeholder {
+        font-family: "masasi";
+      }
+      input::-moz-placeholder {
+        font-family: "masasi";
+      }
+      // タイトル
+
+      // 内容
       textarea {
         padding: 10px;
       }
-      .form__btn {
+      textarea::-webkit-input-placeholder {
+        font-family: "masasi";
+      }
+      textarea:-ms-input-placeholder {
+        font-family: "masasi";
+      }
+      textarea::-moz-placeholder {
+        font-family: "masasi";
+      }
+      // 内容
+
+      .form_btn {
         padding: 15px 40px;
         font-size: 1.2em;
         background-color: #000;
@@ -264,7 +307,6 @@
         border-style: none;
         font-family: "takashi";
         border-radius: 50px;
-        
       }
 
       .btn {

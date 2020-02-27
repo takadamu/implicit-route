@@ -2,18 +2,16 @@
   <div class="contents">
     <div class="form">
       <%= form_with(model: @post, local: true) do |form| %>
-        <h3>
-          とうこうする？
-        </h3>
-      <div class="form">
+        <h3>とうこうする？</h3>
+      <div class="form-area">
         <%= form.text_field :title, placeholder: "たいとる" %>
         <%= form.text_area :content, placeholder: "ごせつめいねがう", rows:"30" %>
         <%= form.text_field :content_url, placeholder: "さんこうりんく" %>
         <%= form.text_field :image_url, placeholder: "がぞうゆーあーるえる" %>
         <%= form.submit "とーこーする！", class: "subbtn" %>
-
         <%= link_to "とっぷぺーじにもどる？🗿", root_path, class: "btn" %>
       <% end %>
       </div>
     </div>
   </div>
+</div>

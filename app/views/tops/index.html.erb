@@ -7,10 +7,10 @@
   <div class="main">
     <div class="left">
       <div class="window">
+        <%= search_form_for @search, url: "/" do |f| %>
         <div class="search-w">
-        <%= form_with(url: search_posts_path, local: true, method: :get, class: "search-form") do |form| %>
-          <%= form.text_field :keyword, placeholder: "とうこうけんさくしよかー", class: "search-input" %>
-          <%= form.submit "検索", class: "search-btn" %>
+          <%= f.search_field :title_or_content_cont, placeholder: "とうこうけんさくしよかー", class: "search-input" %>
+          <%= f.submit "さがす", class: :input_btn %>
         <% end %>
         </div>
       </div>
@@ -18,15 +18,18 @@
       <div class="bar">
         <div class="content">
           <div class="contents">
-            
-            <% @posts.each do |post|%>
-              <%= link_to "/posts/#{post.id}", method: :get do%>
-                <div class="routelist">
-                  <p><%= post.title%></p>
-                  <p><%= post.created_at%></p>
-                </div>
-              <% end %>
-            <% end %>  
+            <div class="lists">
+              <% if @results.any? %>
+                <% @results.each do |result|%>
+                  <%= link_to "/posts/#{result.id}", method: :get do%>
+                      <div class="routelist">
+                        <p><%= result.title %></p>
+                        <p><%= result.created_at%></p>
+                      </div>
+                  <% end%>
+                <% end %>
+              <% end %> 
+            </div>
           </div>
         </div>
       </div>

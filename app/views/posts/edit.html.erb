@@ -1,15 +1,17 @@
 <div class="content-post">
   <div class="more">
-    <h1>とうこうのへんしゅー</h1>
     <div class="more-cont">
-      <%= form_with model: @post, class: :form, local: true do |form| %>
-        <%= form.text_field :title, placeholder: :たいとる, class: :form__title %>
-        <%= form.text_area :content, placeholder: :ほんぶん, class: :form__content %>
-        <%= form.text_field :image, class: :form__image %>
-        <%= form.submit 'これ👆になおす', class: :form__btn %>
+      <%= form_with(model: @post, local: true) do |form| %>
+        <h1>とうこうのへんしゅー</h1>
+      <div class="more-list">
+        <%= form.text_field :title, placeholder: "たいとる" %>
+        <%= form.text_area :content, placeholder: "ほんぶん", rows:"30"  %>
+        <%= form.text_field :content_url, placeholder: "さんこうりんく" %>
+        <%= form.text_field :image, placeholder: "がぞうゆーあーるえる" %>
+        <%= form.submit 'これ👆になおす', class: "form_btn" %>
+        <%= link_to "とっぷぺーじにもどる？🗿", root_path, class: "btn" %>
       <% end %>
-
-      <%= link_to "とっぷぺーじにもどる？🗿", root_path, class: "btn" %>
+      </div>
     </div>
   </div>
 </div>
