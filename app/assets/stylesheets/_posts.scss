@@ -40,6 +40,7 @@
       width: 95%;
       height: 100%;
       padding: 30px;
+      font-size: 30px;
       overflow: scroll;
       display: grid;
 
@@ -77,13 +78,15 @@
       // 内容
 
       .subbtn {
-        padding: 15px 40px;
-        font-size: 1.2em;
-        background-color: #000;
+        width: 30%;
+        height: 100%;
+        font-size: 30px;
+        background-color: rgb(123, 253, 192);
         color: #fff;
         border-style: none;
         font-family: "takashi";
         border-radius: 50px;
+        margin: 0 auto;
       }
 
       .btn {
@@ -154,9 +157,12 @@
       }
 
       img {
-        width: 50%;
-        width: 50%;
-        margin: 30px;
+        width: 60%;
+        height: 50%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 20%;
+        text-align: center;
       }
 
       h3 {
@@ -172,6 +178,14 @@
         }
       }
 
+      span {
+        display: block;
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: 18px;
+        color: grey;
+      }
+
       p {
         font-size: 25px;
         margin-left: 20px;
@@ -179,17 +193,23 @@
         color: black;
 
       }
-      textarea {
-        padding: 10px;
+
+      ul {
+        display: flex;
+        height: 50px;
+
+        li {
+          padding-right: 40%;
+
+        }
       }
-      .subbtn {
-        padding: 15px 40px;
-        font-size: 1.2em;
-        background-color: #000;
-        color: #fff;
-        border-style: none;
-        font-family: "takashi";
-        border-radius: 50px;
+
+      .name {
+        margin: 20px 0 0 20px;
+        padding: 10px;
+        color: grey;
+        font-size: 18px;
+
       }
 
       .btn {
@@ -203,22 +223,14 @@
         border-radius: 20px;
         padding: 10px;
         box-shadow: 4px 4px;
-        margin: 30px;
+        margin: 0 30px 30px 0;
       }
 
       .btn:active {
         -webkit-transform: translateY(2px);
         transform: translateY(2px);
         box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
-      }
-
-      ul {
-        display: flex;
-
-        li {
-
-        }
-      }
+      }      
 
     }
   }

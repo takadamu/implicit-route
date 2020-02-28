@@ -3,24 +3,26 @@
     <div class="more-cont">
       <div class="more-conts">
         <h3><%= simple_format(@post.title) %></h3>
-        <%= simple_format(@post.content) %>
-        <%= link_to @post.content_url do%>
-          <%= simple_format(@post.content_url) %>
-        <% end %>
-        <%= image_tag(@post.image_url) %>
-        <ul class="more-list">
-            <% if user_signed_in? && current_user.id == @post.user_id %>
-          <li>
-            <%= link_to '編集', "/posts/#{@post.id}/edit", method: :get %>
-          </li>
-          <li>
-            <%= link_to '削除', "/posts/#{@post.id}", method: :delete %>
-          </li>
+          <%= image_tag(@post.image_url) %>
+          <%= simple_format(@post.content) %>
+          <span>【参考リンク】</span>
+          <%= link_to @post.content_url do%>
+            <%= simple_format(@post.content_url) %>
           <% end %>
-        </ul>
-        <span class="name">
-          <span>投稿者👉</span><%= @post.user.name %>
-        </span>
+        <div class="name">
+          投稿者👉
+          <%= @post.user.name %>
+        </div>
+          <ul class="more-list">
+              <% if user_signed_in? && current_user.id == @post.user_id %>
+            <li>
+              <%= link_to '編集', "/posts/#{@post.id}/edit", method: :get %>
+            </li>
+            <li>
+              <%= link_to '削除', "/posts/#{@post.id}", method: :delete %>
+            </li>
+            <% end %>
+          </ul>
         <%= link_to "とっぷぺーじにもどる？🗿", root_path, class: "btn" %>
       </div>
     </div>

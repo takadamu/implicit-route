@@ -10,7 +10,6 @@
     background-color: #fff;
     height: calc(100% - 10%);
     width: calc(100% - 30%);
-    overflow: scroll;
     margin: 0 auto;
     background-color:rgba(255,255,255,0.8);
     border-radius: 10px; 
@@ -35,7 +34,7 @@
         height: 100px;
         width: 50%;
         margin: 0 auto;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
 
         label {
           display: block;
@@ -50,28 +49,50 @@
           margin: 0 auto;
           box-shadow: 4px 4px;
 
-          input#user_remember_me {
-            text-decoration: none;
-          }
         }
       }
-      .actions {
+
+      .checkfield {
+        margin-left: 25%;
         height: 50px;
+
+        label {
+          font-family: "masasi";
+          font-size: 30px;
+          margin-left: 10px;
+
+        }
+      }
+
+      .actions {
+        height: 80px;
         width: 100%;
-        padding-top: 20px;
 
         input {
-          padding: 15px 40px;
-          font-size: 1.2em;
-          background-color: #000;
-          color: #fff;
-          border-style: none;
-          font-family: "takashi";
-          border-radius: 50px;
-
+          font-family: "cosmo";
+          font-size: 35px;
+          color: black;
+          text-decoration: none;
+          background:radial-gradient(circle,DeepPink 20%,Aqua 40%,Gold 100%);
+          display: block;
+          margin: 10px auto;
+          width: 100px;
+          height: 100px;
+          line-height: 100px;
+          border-radius: 50%;
+          /* ここで動く速度とか設定 */
+          transition: all 1s ease;
+          -webkit-transition: all 1s ease;
+          border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
+          box-shadow: 0 0 8px gray;
         }
-        
+
+        input:hover {
+          transform: rotate(720deg);
+          -webkit-transform: rotate(720deg);
+        }
       }
+      
       .btn {
         font-size: 30px;
         font-family: "masasi";

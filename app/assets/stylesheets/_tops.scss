@@ -18,6 +18,7 @@ body {
     height: 200px;
     width: 100vw;
     position: relative;
+    padding-top: 10px;
 
     .menu {
       height: 50%;
@@ -122,7 +123,7 @@ body {
   }
 
   .main {
-    height: calc(100vh - 230px);
+    height: calc(100vh - 250px);
     width: 100%;
     display: flex;
 
@@ -178,9 +179,7 @@ body {
               margin-top: 11px;
               border-radius: 50px;
               cursor: pointer;
-              
             }
-
           }
         }
       }
@@ -221,7 +220,7 @@ body {
 
               .routelist {
                 height: auto;
-                width: 95%;
+                width: 98%;
                 border: groove;
                 margin-bottom: 10px;
                 padding: 5px;
@@ -231,14 +230,15 @@ body {
                 box-shadow: 0px 0px 0px 5px #dfefff;
                 border: dashed 2px white;
                 color: #454545;
+                margin-bottom: 20px;
               }
 
               .routelist:after {
                 position: absolute;
                 content: '';
-                left: -2px;
+                right: -2px;
                 top: -2px;
-                border-width: 0 0 30px 30px;
+                border-width: 0 30px 30px 0;
                 border-style: solid;
                 border-color: #fff #fff #a8d4ff;
                 box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
@@ -251,11 +251,11 @@ body {
     }
 
     .right {
-      height: calc(100% - 8%);
+      height: calc(100% - 18%);
       width: calc(100% - 40%);
       background-color: white;
       margin: auto;
-      margin-top: 15px;
+      margin-top: 60px;
       border: 7px solid #ccc;
       background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.9);
       border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
@@ -274,6 +274,7 @@ body {
           border-radius: 10px; 
           -webkit-border-radius: 10px;
           -moz-border-radius: 10px;
+          
         }
       }
     }
