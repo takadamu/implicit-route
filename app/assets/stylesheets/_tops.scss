@@ -264,17 +264,40 @@ body {
       .frame {
         height: 100%;
         width: 100%;
-        display: flex;
+        // display: flex;
+        position: relative;
 
         #map {
-          display: block;
+          margin: 16px 23px;
           height: calc(100% - 5%);
           width: calc(100% - 5%);
-          margin: auto;
           border-radius: 10px; 
           -webkit-border-radius: 10px;
           -moz-border-radius: 10px;
-          
+         position: absolute; 
+        }
+
+        .search-w {
+          padding-top: 100px;
+          padding-left: 60px;
+          position: absolute;
+
+          input {
+            display: block;
+            height: 60px;
+            width: 200px;
+            background-color: white;
+          }
+
+          button {
+            height: 30px;
+            width: 70px;
+          }
+
+          span {
+            height: 30p;
+            width: 200px;
+          }
         }
       }
     }
