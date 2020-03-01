@@ -77,16 +77,48 @@
       }
       // 内容
 
-      .subbtn {
-        width: 30%;
-        height: 100%;
-        font-size: 30px;
-        background-color: rgb(123, 253, 192);
-        color: #fff;
-        border-style: none;
-        font-family: "takashi";
-        border-radius: 50px;
-        margin: 0 auto;
+      .actions {
+        height: 80px;
+        width: 100%;
+
+        input {
+          font-family: "masasi";
+          font-size: 35px;
+          color: black;
+          text-decoration: none;
+          background:radial-gradient(circle,DeepPink 10%,Aqua 30%,Gold 100%);
+          display: block;
+          margin: 10px auto;
+          width: 270px;
+          height: 100%;
+          border-radius: 50%;
+          /* ここで動く速度とか設定 */
+          transition: all 1s ease;
+          -webkit-transition: all 1s ease;
+          border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
+          box-shadow: 0 0 8px gray;
+          cursor: pointer;
+        }
+
+        input:hover {
+          animation: shake 0.2s linear infinite;
+          -webkit-animation: shake 0.2s linear infinite;
+        }
+
+        @keyframes shake {
+          0% { transform: translate(3px, 2px) rotate(0deg); }
+          10% { transform: translate(-2px, -3px) rotate(-1deg); }
+          20% { transform: translate(-4px, 0px) rotate(1deg); }
+          30% { transform: translate(0px, 3px) rotate(0deg); }
+          40% { transform: translate(2px, -2px) rotate(1deg); }
+          50% { transform: translate(-2px, 3px) rotate(-1deg); }
+          60% { transform: translate(-4px, 2px) rotate(0deg); }
+          70% { transform: translate(3px, 2px) rotate(-1deg); }
+          80% { transform: translate(-2px, -2px) rotate(1deg); }
+          90% { transform: translate(2px, 4px) rotate(0deg); }
+          100% { transform: translate(2px, -3px) rotate(-1deg); }
+        }
+
       }
 
       .btn {
@@ -100,6 +132,7 @@
         border-radius: 20px;
         padding: 10px;
         box-shadow: 4px 4px;
+        margin-left: 67%;
       }
 
       .btn:active {
@@ -163,6 +196,7 @@
         margin-bottom: 30px;
         margin-left: 20%;
         text-align: center;
+        box-shadow: 0 12px 10px -6px rgba(0,0,0,.3);
       }
 
       h3 {
@@ -217,13 +251,13 @@
         font-size: 30px;
         font-family: "masasi";
         color: black;
-        float: right;
         text-decoration: none;
         background-color: rgb(219, 219, 219);
         border-radius: 20px;
         padding: 10px;
         box-shadow: 4px 4px;
         margin: 0 30px 30px 0;
+        float: right;
       }
 
       .btn:active {

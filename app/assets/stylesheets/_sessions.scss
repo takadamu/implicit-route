@@ -85,6 +85,7 @@
           -webkit-transition: all 1s ease;
           border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
           box-shadow: 0 0 8px gray;
+          cursor: pointer;
         }
 
         input:hover {
@@ -115,3 +116,106 @@
 }
 
 // ーーーーーーーーー ログイン終了 ーーーーーーーーーー
+
+// ーーーーーーーーー 新規登録失敗開始 ーーーーーーーーーー
+
+.signup_onemore {
+  height: calc(100vh - 200px);
+  width: 100vw;
+  display: flex;
+  color: black;
+
+  .contents{
+    background-color: #fff;
+    height: calc(100% - 10%);
+    width: calc(100% - 30%);
+    margin: 0 auto;
+    background-color:rgba(255,255,255,0.8);
+    border-radius: 10px; 
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    overflow: scroll;
+
+    .form {
+      width: 90%;
+      height: 100%;
+      display: grid;
+      margin: 10px 5% 0;
+
+      h2 {
+        height: 110px;
+        display: block;
+        text-align: center;
+        font-size: 100px;
+        font-family: "masasi";
+      }
+      .field {
+        height: 100px;
+        width: 50%;
+        margin: 0 auto;
+
+        label {
+          display: block;
+          font-size: 30px;
+          font-family: "masasi";
+        }
+
+        input {
+          width: 500px;
+          height: 38px;
+          font-size: 30px;
+          margin: 0 auto;
+          box-shadow: 4px 4px;
+        }
+      }
+      .actions {
+        height: 80px;
+        width: 100%;
+
+        input {
+          font-family: "takashi";
+          font-size: 23px;
+          color: black;
+          text-decoration: none;
+          background:radial-gradient(circle,DeepPink 20%,Aqua 40%,Gold 100%);
+          display: block;
+          margin: 10px auto;
+          width: 150px;
+          height: 70px;
+          line-height: 70px;
+          border-radius: 50%;
+          /* ここで動く速度とか設定 */
+          transition: all 1s ease;
+          -webkit-transition: all 1s ease;
+          border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
+          box-shadow: 0 0 8px gray;
+          cursor: pointer;
+        }
+
+        input:hover {
+          transform: rotate(720deg);
+          -webkit-transform: rotate(720deg);
+        }
+      }
+      .btn {
+        font-size: 30px;
+        font-family: "masasi";
+        color: black;
+        float: right;
+        text-decoration: none;
+        background-color: rgb(219, 219, 219);
+        border-radius: 20px;
+        padding: 10px;
+        box-shadow: 4px 4px;
+      }
+
+      .btn:active {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+}
+
+// ーーーーーーーーー 新規登録失敗終了 ーーーーーーーーーー

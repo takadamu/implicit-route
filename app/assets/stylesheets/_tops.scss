@@ -147,7 +147,7 @@ body {
 
           .search-w {
             height: 100%;
-            width: 100%;
+            width: 105%;
             display: flex;
 
             .search-input {
@@ -155,13 +155,13 @@ body {
               width: 70%;
               color: black;
               font-size: 20px;
-              margin: 11px;
+              margin: 12px 0 11px 11px;
               border-radius: 10px;
             }
             .search-input::-webkit-input-placeholder {
               font-family: "masasi";
             }
-            .search-input:-ms-input-placeholder {
+            .search-input::-ms-input-placeholder {
               font-family: "masasi";
             }
             .search-input::-moz-placeholder {
@@ -169,17 +169,27 @@ body {
             }
 
             .input_btn {
-              width: 20%;
-              height: 70%;
-              padding: 5px;
+              width: 22%;
+              height: 100%;
               font-size: 20px;
-              color: rgb(252, 164, 0);
               border-style: none;
-              font-family: "tack";
-              margin-top: 11px;
-              border-radius: 50px;
               cursor: pointer;
+              display: block;
+              background: url(radar.jpg) no-repeat;
+              background-size: 70%;
+              background-position: center;
+              transition: all 1s ease;
+              -webkit-transition: all 1s ease;
+              transform-origin: 50% 50%;         // 要素の中央を中心とする
+              outline:0;
+              // filter: drop-shadow(0 0 5px #000);
             }
+    
+            .input_btn:hover {
+              transform: rotate(400deg);
+              -webkit-transform: rotate(400deg);
+            }
+            
           }
         }
       }
@@ -264,44 +274,76 @@ body {
       .frame {
         height: 100%;
         width: 100%;
-        // display: flex;
         position: relative;
 
         #map {
-          margin: 16px 23px;
+          margin: 18px 23px;
           height: calc(100% - 5%);
           width: calc(100% - 5%);
           border-radius: 10px; 
           -webkit-border-radius: 10px;
           -moz-border-radius: 10px;
-         position: absolute; 
+          position: absolute; 
         }
 
         .search-w {
-          padding-top: 100px;
+          bottom: 65%;
+          padding-top: 80px;
           padding-left: 60px;
           position: absolute;
 
           input {
             display: block;
-            height: 60px;
-            width: 200px;
+            height: 40px;
+            width: 240px;
             background-color: white;
+            position: absolute;
+            box-shadow: 1px 1px 4px rgb(155, 155, 155);
+            border-radius: 5px;
+          }
+          input::placeholder {
+            font-family: "masasi";
+            font-size: 20px;
+            color: grey;
           }
 
           button {
-            height: 30px;
-            width: 70px;
+            height: 41px;
+            width: 40px;
+            margin-left: 252px;
+            margin-bottom: 8px;
+            font-size: 20px;
+            display: inline-block;
+            text-decoration: none;
+            color: rgba(136, 136, 136, 0.43);/*アイコン色*/
+            border-radius: 50%;
+            text-align: center;
+            overflow: hidden;
+            font-weight: bold;
+            background-image: linear-gradient(#e8e8e8 0%, #d6d6d6 100%);
+            text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
+            box-shadow: inset 0 2px 0 rgba(255,255,255,0.5), 0 2px 2px rgba(0, 0, 0, 0.19);
+            border-bottom: solid 2px #b5b5b5;
+            outline:0;
+            cursor: pointer;
+          }
+          button i {
+            line-height: 41px;
+          }
+          button:active {
+            /*押したとき*/
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 2px 2px rgba(0, 0, 0, 0.19);
+            border-bottom: none;
           }
 
           span {
-            height: 30p;
             width: 200px;
+            padding: 2px 5px 0;
+            background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.8);
           }
         }
       }
     }
-
 
     .info {
       height: calc(100% - 17%);
@@ -335,6 +377,7 @@ body {
             height: 100%;
             width:100%;
             text-decoration: none;
+            filter: drop-shadow(5px 5px 5px rgba(63, 63, 63, 0.6));
           }
         }
       }
@@ -352,6 +395,7 @@ body {
             height: 100%;
             width:100%;
             text-decoration: none;
+            filter: drop-shadow(5px 5px 5px rgba(63, 63, 63, 0.6));
           }
         }
       }
@@ -369,6 +413,7 @@ body {
             height: 100%;
             width:100%;
             text-decoration: none;
+            filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6));
           }
         }
       }
@@ -387,6 +432,7 @@ body {
             width:100%;
             padding-right: 50px;
             text-decoration: none;
+            filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.6));
           }
         }
       }

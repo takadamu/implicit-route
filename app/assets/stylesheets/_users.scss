@@ -14,7 +14,6 @@
     background-color: #fff;
     height: calc(100% - 10%);
     width: calc(100% - 30%);
-    overflow: scroll;
     margin: 0 auto;
     background-color:rgba(255,255,255,0.8);
     border-radius: 10px; 
@@ -24,26 +23,23 @@
     .form {
       width: 95%;
       height: 100%;
-      padding: 30px;
-      overflow: scroll;
+      padding: 20px;
       display: grid;
 
       h3 {
         display: block;
         text-align: center;
         font-size: 100px;
-        margin-bottom: 30px;
         font-family: "masasi";
       }
       .field {
         height: 100px;
         width: 50%;
         margin: 0 auto;
-        margin-bottom: 20px;
 
         label {
           display: block;
-          font-size: 40px;
+          font-size: 30px;
           font-family: "masasi";
         }
 
@@ -56,21 +52,33 @@
         }
       }
       .actions {
-        height: 50px;
+        height: 80px;
         width: 100%;
-        padding-top: 20px;
 
         input {
-          padding: 15px 40px;
-          font-size: 1.2em;
-          background-color: #000;
-          color: #fff;
-          border-style: none;
-          font-family: "takashi";
-          border-radius: 50px;
-
+          font-family: "cosmo";
+          font-size: 35px;
+          color: black;
+          text-decoration: none;
+          background:radial-gradient(circle,DeepPink 20%,Aqua 40%,Gold 100%);
+          display: block;
+          margin: 10px auto;
+          width: 110px;
+          height: 80px;
+          line-height: 80px;
+          border-radius: 50%;
+          /* ここで動く速度とか設定 */
+          transition: all 1s ease;
+          -webkit-transition: all 1s ease;
+          border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
+          box-shadow: 0 0 8px gray;
+          cursor: pointer;
         }
-        
+
+        input:hover {
+          transform: rotate(720deg);
+          -webkit-transform: rotate(720deg);
+        }
       }
       .btn {
         font-size: 30px;

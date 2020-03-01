@@ -74,7 +74,7 @@ function initialize() {
 function search(){
    var place = document.getElementById('place').value;
    var geocoder = new google.maps.Geocoder();
-   // ジオコーディング　検索実行
+   // ジオコーディング検索実行
    geocoder.geocode({"address" : place}, function(results, status) {
    if (status == google.maps.GeocoderStatus.OK) {
          
