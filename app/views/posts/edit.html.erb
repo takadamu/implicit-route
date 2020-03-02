@@ -8,7 +8,9 @@
         <%= form.text_area :content, placeholder: "ほんぶん", rows:"30"  %>
         <%= form.text_field :content_url, placeholder: "さんこうりんく" %>
         <%= form.text_field :image_url, placeholder: "がぞうゆーあーるえる" %>
-        <%= form.submit 'これ👆になおす', class: "form_btn" %>
+        <div class="form_btn">
+          <%= form.submit "これ👆になおす" %>
+        </div>
         <%= link_to "とっぷぺーじにもどる？🗿", root_path, class: "btn" %>
       <% end %>
       </div>

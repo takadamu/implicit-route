@@ -13,13 +13,13 @@
           投稿者👉
           <%= @post.user.name %>
         </div>
-          <ul class="more-list">
+          <ul>
               <% if user_signed_in? && current_user.id == @post.user_id %>
             <li>
-              <%= link_to '編集', "/posts/#{@post.id}/edit", method: :get %>
+              <%= link_to 'へんしゅうする？', "/posts/#{@post.id}/edit", method: :get %>
             </li>
             <li>
-              <%= link_to '削除', "/posts/#{@post.id}", method: :delete %>
+              <%= link_to 'ゴミばこポイする？', "/posts/#{@post.id}", method: :delete %>
             </li>
             <% end %>
           </ul>

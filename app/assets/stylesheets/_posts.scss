@@ -191,8 +191,8 @@
 
       img {
         width: 60%;
-        height: 50%;
-        margin-top: 30px;
+        height: 60%;
+        margin-top: 20px;
         margin-bottom: 30px;
         margin-left: 20%;
         text-align: center;
@@ -225,17 +225,6 @@
         margin-left: 20px;
         padding: 10px;
         color: black;
-
-      }
-
-      ul {
-        display: flex;
-        height: 50px;
-
-        li {
-          padding-right: 40%;
-
-        }
       }
 
       .name {
@@ -243,7 +232,40 @@
         padding: 10px;
         color: grey;
         font-size: 18px;
+      }
 
+      ul {
+        display: flex;
+        height: 40px;
+        padding-left: 70px;
+        padding-top: 20px;
+
+        li {
+          height: 30px;
+          font-family: "masasi";
+          font-size: 25px;
+          background-color: #64e24b;
+          margin: 0 90px 10px 0;
+          box-shadow: 0 5px rgb(46, 141, 43);
+          line-height: 30px;
+          padding: 5px;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+
+          a {
+            text-decoration: none;
+            color: #fff !important;
+          }
+
+        }
+        li:hover {
+          -ms-transform: translateY(7px);
+          -webkit-transform: translateY(7px);
+          transform: translateY(7px);
+          border-bottom: none;
+          box-shadow: none;
+        }
+        
       }
 
       .btn {
@@ -317,6 +339,7 @@
         height: 40px;
         margin: 10px 0;
         padding: 10px;
+        font-size: 30px;
         color: black;
       }
       input::-webkit-input-placeholder {
@@ -333,6 +356,7 @@
       // 内容
       textarea {
         padding: 10px;
+        font-size: 30px;
       }
       textarea::-webkit-input-placeholder {
         font-family: "masasi";
@@ -346,33 +370,70 @@
       // 内容
 
       .form_btn {
-        padding: 15px 40px;
-        font-size: 1.2em;
-        background-color: #000;
-        color: #fff;
-        border-style: none;
-        font-family: "takashi";
-        border-radius: 50px;
+        height: 80px;
+        width: 100%;
+
+        input {
+          font-family: "masasi";
+          font-size: 35px;
+          color: black;
+          text-decoration: none;
+          background:radial-gradient(circle,DeepPink 10%,Aqua 30%,Gold 100%);
+          display: block;
+          margin: 10px auto;
+          width: 270px;
+          height: 100%;
+          border-radius: 50%;
+          /* ここで動く速度とか設定 */
+          transition: all 1s ease;
+          -webkit-transition: all 1s ease;
+          border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
+          box-shadow: 0 0 8px gray;
+          cursor: pointer;
+        }
+
+        input:hover {
+          animation: shake 0.2s linear infinite;
+          -webkit-animation: shake 0.2s linear infinite;
+        }
+
+        @keyframes shake {
+          0% { transform: translate(3px, 2px) rotate(0deg); }
+          10% { transform: translate(-2px, -3px) rotate(-1deg); }
+          20% { transform: translate(-4px, 0px) rotate(1deg); }
+          30% { transform: translate(0px, 3px) rotate(0deg); }
+          40% { transform: translate(2px, -2px) rotate(1deg); }
+          50% { transform: translate(-2px, 3px) rotate(-1deg); }
+          60% { transform: translate(-4px, 2px) rotate(0deg); }
+          70% { transform: translate(3px, 2px) rotate(-1deg); }
+          80% { transform: translate(-2px, -2px) rotate(1deg); }
+          90% { transform: translate(2px, 4px) rotate(0deg); }
+          100% { transform: translate(2px, -3px) rotate(-1deg); }
+        }
+
       }
+
 
       .btn {
         width: 32%;
         font-size: 30px;
         font-family: "masasi";
         color: black;
-        float: right;
         text-decoration: none;
         background-color: rgb(219, 219, 219);
         border-radius: 20px;
         padding: 10px;
         box-shadow: 4px 4px;
+        margin: 0 10px 10px 67%;
+        // float: right;
       }
 
       .btn:active {
         -webkit-transform: translateY(2px);
         transform: translateY(2px);
         box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
-      }
+      }      
+
     }
   }
 }
