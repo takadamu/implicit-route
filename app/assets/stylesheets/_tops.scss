@@ -99,13 +99,15 @@ body {
         padding: 0 100px;
         font-family: "masasi";
 
-        p {
+        .title-p {
           display:  block;                /* ブロック要素にする */
           position:  relative;            /* 位置指定 */
           animation: anime1 3s ease;      /* アニメーション指定 */  
           border: 7px solid #ccc;
           background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.9);
           border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
+          text-decoration: none;
+          color: black;
         }
         
         @keyframes anime1 {
