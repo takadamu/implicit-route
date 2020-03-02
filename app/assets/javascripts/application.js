@@ -99,3 +99,18 @@ function search(){
    });
    //}
 }
+
+
+//mapをクリックしたときのイベントを設定
+google.maps.event.addListener(map, 'click', mylistener);
+
+//クリックしたときの処理
+function mylistener(event){
+        //marker作成
+        var marker = new google.maps.Marker();
+        //markerの位置を設定
+        //event.latLng.lat()でクリックしたところの緯度を取得
+        marker.setPosition(new google.maps.LatLng(event.latLng.lat(), event.latLng.lng()));
+        //marker設置
+        marker.setMap(map);
+};

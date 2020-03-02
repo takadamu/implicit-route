@@ -125,7 +125,7 @@ body {
   }
 
   .main {
-    height: calc(100vh - 250px);
+    height: calc(100vh - 270px);
     width: 100%;
     display: flex;
 
@@ -184,7 +184,6 @@ body {
               -webkit-transition: all 1s ease;
               transform-origin: 50% 50%;         // 要素の中央を中心とする
               outline:0;
-              // filter: drop-shadow(0 0 5px #000);
             }
     
             .input_btn:hover {
@@ -446,7 +445,7 @@ body {
 
   .footer {
     bottom: 0;
-    height: 20px;
+    height: 30px;
     width: 100vw;
     display: flex;
     background: radial-gradient(ellipse at center, rgba(255,255,255,0) 40%,rgba(255,255,255,0.5) 60%,rgba(255,255,255,1) 100%);
@@ -454,6 +453,11 @@ body {
     p {
       width: 100%;
       text-align: center;
+      line-height: 30px;
+      font-size: 1.3em;
+      font-weight:bold;
+      color: rgba(255, 255, 255, 0.7);
+      transform: scale(2, 1.1);
     }
   }
 

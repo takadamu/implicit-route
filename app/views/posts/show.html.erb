@@ -3,7 +3,11 @@
     <div class="more-cont">
       <div class="more-conts">
         <h3><%= simple_format(@post.title) %></h3>
-          <%= image_tag(@post.image_url) %>
+          <% if @post.image_url? %>
+            <%= image_tag(@post.image_url) %>
+          <% else %>
+            <%= image_tag "default.jpg" %>
+          <% end %>
           <%= simple_format(@post.content) %>
           <span>【参考リンク】</span>
           <%= link_to @post.content_url do%>
