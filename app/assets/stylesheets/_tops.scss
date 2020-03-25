@@ -451,13 +451,13 @@ body {
     background: radial-gradient(ellipse at center, rgba(255,255,255,0) 40%,rgba(255,255,255,0.5) 60%,rgba(255,255,255,1) 100%);
     
     p {
-      width: 100%;
+      width: 100vw;
       text-align: center;
       line-height: 30px;
       font-size: 1.3em;
       font-weight:bold;
       color: rgba(255, 255, 255, 0.7);
-      transform: scale(2, 1.1);
+      // transform: scale(2, 1.1);
     }
   }
 

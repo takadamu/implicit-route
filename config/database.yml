@@ -52,3 +52,6 @@ production:
   database: implicit-route_production
   username: implicit-route
   password: <%= ENV['IMPLICIT-ROUTE_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
