@@ -14,6 +14,7 @@
 //= require activestorage
 //= require_tree .
 
+var map;
 window.onload = function() {
   // 初期設定
   var MyLatLng = new google.maps.LatLng(37.916194,139.036389);
@@ -22,7 +23,7 @@ window.onload = function() {
   center: MyLatLng,    //地図の中心座標
   mapTypeId: 'roadmap'   //地図の種類
   };
-  var map = new google.maps.Map(document.getElementById('map'), Options);
+  map = new google.maps.Map(document.getElementById('map'), Options);
 
   // じゃんけんトンネルのマーク
   var marker = new google.maps.Marker({
@@ -59,18 +60,21 @@ window.onload = function() {
       myInfoWindow.open(map, marker);
     });
   });
+
+  //mapをクリックしたときのイベントを設定
+  google.maps.event.addListener(map, 'click', mylistener);
 }
 
 
-var map;
-function initialize() {
-  // 地図を表示する際のオプションを設定
+
+// function initialize() {
+//   // 地図を表示する際のオプションを設定
 
 
-  // Mapオブジェクトに地図表示要素情報とオプション情報を渡し、インスタンス生成
-  map = new google.maps.Map(document.getElementById("map"),
-      mapOptions);
-}
+//   // Mapオブジェクトに地図表示要素情報とオプション情報を渡し、インスタンス生成
+//   map = new google.maps.Map(document.getElementById("map"),
+//       mapOptions);
+// }
  
 function search(){
    var place = document.getElementById('place').value;
@@ -102,8 +106,7 @@ function search(){
 }
 
 
-//mapをクリックしたときのイベントを設定
-google.maps.event.addListener(map, 'click', mylistener);
+
 
 //クリックしたときの処理
 function mylistener(event){
