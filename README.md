@@ -47,8 +47,8 @@
 - 地図の住所検索（緯度・経度出力）<br><br>
 
 【テスト用アカウント】  
- Email：test@gmail.com  
- Password：12345678<br><br>
+Email：test@gmail.com  
+Password：12345678<br><br>
 
 トップページ左側の検索窓では、**部分一致検索**が可能です  
 タイトルと投稿内容から、部分一致するものが表示されます  
