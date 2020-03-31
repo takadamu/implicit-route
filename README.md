@@ -1,6 +1,5 @@
 ロゴやバナー画像
 プロジェクトの概要説明
-サービスのスクリーンショット画像 or GIFアニメ（デモ）
 目次
 必要条件
 使用言語、環境、テクノロジー
@@ -48,6 +47,7 @@
 ※以下一部抜粋  
 - FontAwesome  
 ![ce7817408d532e5c619269428d69148c](https://user-images.githubusercontent.com/60647249/78027119-c9232100-7397-11ea-8d5e-58b4613ddd1e.gif)  
+<br>
 - 各種ボタン  
 ログイン  
 ![5baeded29b2f741c35da51a718b4b90e](https://user-images.githubusercontent.com/60647249/78027556-857ce700-7398-11ea-8cef-069038ddcc7d.gif)  
@@ -56,12 +56,30 @@
 検索  
 ![0b46cab1f1ec13d4aac532f591f4cf93](https://user-images.githubusercontent.com/60647249/78027738-d260bd80-7398-11ea-8350-5278b2446f48.gif)  
 
+# DB設計
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|email|string|null: false|
+|password|string|null: false|
+### Association
+- has_many :posts
+
+## postsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|title|text|null: false|
+|content|text|null: false|
+|content_url|text||
+|image_url|text||
+### Association
+- belongs_to :user
+
 # 今後の展望
 1. 住所と投稿を紐付けて、マップにマーカー表示させる
    - 現時点で表示されているマーカーは、事前に表示させるようJS内で組んであるものになります
-2. テキスト
-   - 
-
-
-
-
+2. マップ上をクリックした時も投稿ができる
+   - クリックした緯度経度を保持したまま、投稿と紐付ける事ができるようにしていきたいです
+3. 文章と画像が混在できるようになる
+   - ブログのように、文章内に画像を貼ることができるようになり、順路の説明がしやすく（わかりやすく）なるようにしたいと考えています
