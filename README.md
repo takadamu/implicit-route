@@ -11,13 +11,12 @@
 今後の計画
 
 # README
-[あんもくのルート](https://implicit-route.herokuapp.com/)
-上記リンクからアプリに飛べます
+[あんもくのルート](https://implicit-route.herokuapp.com/)  
 ※読み込みが遅い可能性がございます。ご了承下さいませ。
 [![Image from Gyazo](https://i.gyazo.com/9433436aca4eeac04d3857f60b4d8bf3.png)](https://gyazo.com/9433436aca4eeac04d3857f60b4d8bf3)
 
 # あんもくのルート
-分かりにくい道を分かる人が解説（投稿）するアプリです
+分かりにくい道を分かる人が解説（投稿）するアプリです  
 **地元の人にしか分からない道が多い**という印象から **「暗黙のルール」** にかけたタイトルになっています
 ![9493f066690f803f6f243aaf20aae528](https://user-images.githubusercontent.com/60647249/78006468-07a8e380-7378-11ea-87d2-772c890c6124.gif)
 
