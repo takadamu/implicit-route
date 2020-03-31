@@ -14,7 +14,7 @@
 [![Image from Gyazo](https://i.gyazo.com/9433436aca4eeac04d3857f60b4d8bf3.png)](https://gyazo.com/9433436aca4eeac04d3857f60b4d8bf3)
 
 # あんもくのルート
-分かりにくい道を分かる人が解説（投稿）するアプリです  
+通り方が分かりにくい道を分かる人が解説（投稿）するアプリです  
 **地元の人にしか分からない道が多い**という印象から **「暗黙のルール」** にかけたタイトルになっています
 <br>
 <br>
@@ -22,24 +22,39 @@
 
 # DEMO
 このアプリでできること
-- 新規ユーザー登録
+- 新規ユーザー登録・ログイン・ログアウト
 - ログインユーザーは投稿・編集・削除が可能
 - 登録していないユーザーは閲覧のみ可能
-- 投稿検索
+- 投稿検索（部分一致可）
 - 地図の住所検索（緯度・経度出力）
-
+<br>
+<br>
 トップページ左側の検索窓では、**部分一致検索**が可能です  
 タイトルと投稿内容から、部分一致するものが表示されます  
 ※gem 'ransack' 使用
 <br>
 <br>
 ![91e85613dcb3f31b45fdd25d93cc074e](https://user-images.githubusercontent.com/60647249/78017603-793c5e00-7387-11ea-8919-e1c5f3397691.gif)
+<br>
 
 トップページのマップ内にある検索窓からは、住所の検索ができます  
 ※今後の展望有
 <br>
 <br>
 ![3ff00f8abe708634ee13e730ee9cf1f8](https://user-images.githubusercontent.com/60647249/78006360-dfb98000-7377-11ea-847c-1891086232d1.gif)
+ 
+# 特徴
+動きはCSSのみで表現しています  
+※以下一部抜粋  
+- FontAwesome
+![ce7817408d532e5c619269428d69148c](https://user-images.githubusercontent.com/60647249/78027119-c9232100-7397-11ea-8d5e-58b4613ddd1e.gif)
+- 各種ボタン
+ログイン
+![5baeded29b2f741c35da51a718b4b90e](https://user-images.githubusercontent.com/60647249/78027556-857ce700-7398-11ea-8cef-069038ddcc7d.gif)
+新規投稿
+![d9425c02f3ca71f07624c87b082fb0d5](https://user-images.githubusercontent.com/60647249/78027400-4189e200-7398-11ea-9004-31536fbea002.gif)
+検索
+![0b46cab1f1ec13d4aac532f591f4cf93](https://user-images.githubusercontent.com/60647249/78027738-d260bd80-7398-11ea-8350-5278b2446f48.gif)
 
 # 今後の展望
 1. 住所と投稿を紐付けて、マップにマーカー表示させる
@@ -48,6 +63,5 @@
    - 
 
 
- 
-# 特徴
+
 
