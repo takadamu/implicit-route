@@ -18,13 +18,12 @@
 
 # あんもくのルート
 分かりにくい道を分かる人が解説（投稿）するアプリです
-**地元の人にしか分からない道が多い**という印象から**「暗黙のルール」**にかけたタイトルになっています
-[![Image from Gyazo](https://i.gyazo.com/9493f066690f803f6f243aaf20aae528.gif)](https://gyazo.com/9493f066690f803f6f243aaf20aae528)
+**地元の人にしか分からない道が多い**という印象から **「暗黙のルール」** にかけたタイトルになっています
+![9493f066690f803f6f243aaf20aae528](https://user-images.githubusercontent.com/60647249/78006468-07a8e380-7378-11ea-87d2-772c890c6124.gif)
 
 トップページのマップ内にある検索窓からは、住所の検索ができます
 ※今後の展望有
-[![Image from Gyazo](https://i.gyazo.com/3ff00f8abe708634ee13e730ee9cf1f8.gif)](https://gyazo.com/3ff00f8abe708634ee13e730ee9cf1f8)
-
+![3ff00f8abe708634ee13e730ee9cf1f8](https://user-images.githubusercontent.com/60647249/78006360-dfb98000-7377-11ea-847c-1891086232d1.gif)
 
 # 今後の展望
 1. 住所と投稿を紐付けて、マップにマーカー表示させる
