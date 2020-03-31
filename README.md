@@ -19,6 +19,26 @@
 <br>
 ![9493f066690f803f6f243aaf20aae528](https://user-images.githubusercontent.com/60647249/78006468-07a8e380-7378-11ea-87d2-772c890c6124.gif)
 
+# DB設計
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|email|string|null: false|
+|password|string|null: false|
+### Association
+- has_many :posts
+
+## postsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|title|text|null: false|
+|content|text|null: false|
+|content_url|text||
+|image_url|text||
+### Association
+- belongs_to :user
+
 # DEMO
 このアプリでできること
 - 新規ユーザー登録・ログイン・ログアウト
@@ -33,7 +53,7 @@
 ※gem 'ransack' 使用
 <br>
 <br>
-![91e85613dcb3f31b45fdd25d93cc074e (1)](https://user-images.githubusercontent.com/60647249/78028195-9712be80-7399-11ea-9eb8-8ccec0718c3c.gif)
+![8547c79d98648ec1ab474d00749ddcf0](https://user-images.githubusercontent.com/60647249/78041116-502dc480-73ab-11ea-9baf-6ef2bbc948ca.gif)
 <br>
 
 トップページのマップ内にある検索窓からは、住所の検索ができます  
@@ -55,26 +75,6 @@
 ![d9425c02f3ca71f07624c87b082fb0d5](https://user-images.githubusercontent.com/60647249/78027400-4189e200-7398-11ea-9004-31536fbea002.gif)  
 検索  
 ![0b46cab1f1ec13d4aac532f591f4cf93](https://user-images.githubusercontent.com/60647249/78027738-d260bd80-7398-11ea-8350-5278b2446f48.gif)  
-
-# DB設計
-## usersテーブル
-|Column|Type|Options|
-|------|----|-------|
-|name|string|null: false|
-|email|string|null: false|
-|password|string|null: false|
-### Association
-- has_many :posts
-
-## postsテーブル
-|Column|Type|Options|
-|------|----|-------|
-|title|text|null: false|
-|content|text|null: false|
-|content_url|text||
-|image_url|text||
-### Association
-- belongs_to :user
 
 # 今後の展望
 1. 住所と投稿を紐付けて、マップにマーカー表示させる
