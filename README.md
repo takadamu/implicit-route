@@ -1,9 +1,3 @@
-プロジェクトの概要説明
-目次
-必要条件
-使用言語、環境、テクノロジー
-使い方
-
 # README
 [あんもくのルート](https://implicit-route.herokuapp.com/)  
 ※読み込みが遅い可能性がございます。ご了承下さいませ。
@@ -78,10 +72,9 @@
 1. 住所と投稿を紐付けて、マップにマーカー表示させる
    - 現時点で表示されているマーカーは、事前に表示させるようJS内で組んであるものになります
    [![Image from Gyazo](https://i.gyazo.com/49087671e941cf2038429b9cb2112a72.jpg)](https://gyazo.com/49087671e941cf2038429b9cb2112a72)<br>
-   [![Image from Gyazo](https://i.gyazo.com/460094fcf5cf6e1b511ff34fab5a3405.png)](https://gyazo.com/460094fcf5cf6e1b511ff34fab5a3405)
-
+   [![Image from Gyazo](https://i.gyazo.com/460094fcf5cf6e1b511ff34fab5a3405.png)](https://gyazo.com/460094fcf5cf6e1b511ff34fab5a3405)<br>
 2. マップ上をクリックした時も投稿ができる
    - クリックした緯度経度を保持したまま、投稿と紐付ける事ができるようにしていきたいです
-   ![9ffe52ba25a76bada984e4b23d1af846](https://user-images.githubusercontent.com/60647249/78045121-8588e100-73b0-11ea-8b5e-ecd19ebef2c4.gif)
+   ![9ffe52ba25a76bada984e4b23d1af846](https://user-images.githubusercontent.com/60647249/78045121-8588e100-73b0-11ea-8b5e-ecd19ebef2c4.gif)<br>
 3. 文章と画像が混在できるようになる
    - ブログのように、文章内に画像を貼ることができるようになり、順路の説明がしやすく（わかりやすく）なるようにしたいと考えています
