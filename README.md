@@ -12,7 +12,7 @@
 [![Image from Gyazo](https://i.gyazo.com/9433436aca4eeac04d3857f60b4d8bf3.png)](https://gyazo.com/9433436aca4eeac04d3857f60b4d8bf3)
 
 # あんもくのルート
-通り方が分かりにくい道を**分かる人が解説（投稿）**するアプリです<br>
+通り方が分かりにくい道を **分かる人が解説（投稿）** するアプリです<br>
 
 当方一人旅が好きなのですが、道が複雑だったり分からなく困ることがよくあります  
 一番困ったのは、***永遠に赤信号***の道路  
@@ -54,7 +54,7 @@
 
 トップページ左側の検索窓では、**部分一致検索**が可能です  
 タイトルと投稿内容から、部分一致するものが表示されます  
-※gem 'ransack' 使用<br>
+※gem ransack 使用<br>
 ![8547c79d98648ec1ab474d00749ddcf0](https://user-images.githubusercontent.com/60647249/78041116-502dc480-73ab-11ea-9baf-6ef2bbc948ca.gif)
 <br><br>
 トップページのマップ内にある検索窓からは、住所の検索ができます  
@@ -77,7 +77,11 @@
 # 今後の展望
 1. 住所と投稿を紐付けて、マップにマーカー表示させる
    - 現時点で表示されているマーカーは、事前に表示させるようJS内で組んであるものになります
+   [![Image from Gyazo](https://i.gyazo.com/49087671e941cf2038429b9cb2112a72.jpg)](https://gyazo.com/49087671e941cf2038429b9cb2112a72)<br>
+   [![Image from Gyazo](https://i.gyazo.com/460094fcf5cf6e1b511ff34fab5a3405.png)](https://gyazo.com/460094fcf5cf6e1b511ff34fab5a3405)
+
 2. マップ上をクリックした時も投稿ができる
    - クリックした緯度経度を保持したまま、投稿と紐付ける事ができるようにしていきたいです
+   ![9ffe52ba25a76bada984e4b23d1af846](https://user-images.githubusercontent.com/60647249/78045121-8588e100-73b0-11ea-8b5e-ecd19ebef2c4.gif)
 3. 文章と画像が混在できるようになる
    - ブログのように、文章内に画像を貼ることができるようになり、順路の説明がしやすく（わかりやすく）なるようにしたいと考えています
