@@ -1,4 +1,3 @@
-ロゴやバナー画像
 プロジェクトの概要説明
 目次
 必要条件
@@ -45,17 +44,15 @@
 - ログインユーザーは投稿・編集・削除が可能
 - 登録していないユーザーは閲覧のみ可能
 - 投稿検索（部分一致可）
-- 地図の住所検索（緯度・経度出力）
-<br>
-<br>
-トップページ左側の検索窓では、部分一致検索が可能です  
+- 地図の住所検索（緯度・経度出力）<br>
+
+トップページ左側の検索窓では、**部分一致検索**が可能です  
 タイトルと投稿内容から、部分一致するものが表示されます  
 ※gem 'ransack' 使用
 <br>
 <br>
 ![8547c79d98648ec1ab474d00749ddcf0](https://user-images.githubusercontent.com/60647249/78041116-502dc480-73ab-11ea-9baf-6ef2bbc948ca.gif)
 <br>
-
 トップページのマップ内にある検索窓からは、住所の検索ができます  
 ※今後の展望有
 <br>
@@ -66,13 +63,15 @@
 動きはCSSのみで表現しています  
 ※以下一部抜粋  
 - FontAwesome  
-![ce7817408d532e5c619269428d69148c](https://user-images.githubusercontent.com/60647249/78027119-c9232100-7397-11ea-8d5e-58b4613ddd1e.gif)  
+![ce7817408d532e5c619269428d69148c](https://user-images.githubusercontent.com/60647249/78027119-c9232100-7397-11ea-8d5e-58b4613ddd1e.gif)
 <br>
 - 各種ボタン  
 ログイン  
-![5baeded29b2f741c35da51a718b4b90e](https://user-images.githubusercontent.com/60647249/78027556-857ce700-7398-11ea-8cef-069038ddcc7d.gif)  
+![5baeded29b2f741c35da51a718b4b90e](https://user-images.githubusercontent.com/60647249/78027556-857ce700-7398-11ea-8cef-069038ddcc7d.gif)
+<br>
 新規投稿  
-![d9425c02f3ca71f07624c87b082fb0d5](https://user-images.githubusercontent.com/60647249/78027400-4189e200-7398-11ea-9004-31536fbea002.gif)  
+![d9425c02f3ca71f07624c87b082fb0d5](https://user-images.githubusercontent.com/60647249/78027400-4189e200-7398-11ea-9004-31536fbea002.gif)
+<br>
 検索  
 ![0b46cab1f1ec13d4aac532f591f4cf93](https://user-images.githubusercontent.com/60647249/78027738-d260bd80-7398-11ea-8350-5278b2446f48.gif)  
 
