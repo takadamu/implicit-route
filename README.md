@@ -34,7 +34,7 @@
 ※gem 'ransack' 使用
 <br>
 <br>
-![91e85613dcb3f31b45fdd25d93cc074e](https://user-images.githubusercontent.com/60647249/78017603-793c5e00-7387-11ea-8919-e1c5f3397691.gif)
+![91e85613dcb3f31b45fdd25d93cc074e (1)](https://user-images.githubusercontent.com/60647249/78028195-9712be80-7399-11ea-9eb8-8ccec0718c3c.gif)
 <br>
 
 トップページのマップ内にある検索窓からは、住所の検索ができます  
