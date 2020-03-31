@@ -62,10 +62,10 @@
 ![ce7817408d532e5c619269428d69148c](https://user-images.githubusercontent.com/60647249/78027119-c9232100-7397-11ea-8d5e-58b4613ddd1e.gif)<br><br>
 - 各種ボタン  
 ログイン  
-![5baeded29b2f741c35da51a718b4b90e](https://user-images.githubusercontent.com/60647249/78027556-857ce700-7398-11ea-8cef-069038ddcc7d.gif)<br>
-新規投稿  
-![d9425c02f3ca71f07624c87b082fb0d5](https://user-images.githubusercontent.com/60647249/78027400-4189e200-7398-11ea-9004-31536fbea002.gif)<br>
-検索  
+![5baeded29b2f741c35da51a718b4b90e](https://user-images.githubusercontent.com/60647249/78027556-857ce700-7398-11ea-8cef-069038ddcc7d.gif)<br><br>
+新規投稿
+![d9425c02f3ca71f07624c87b082fb0d5](https://user-images.githubusercontent.com/60647249/78027400-4189e200-7398-11ea-9004-31536fbea002.gif)<br><br>
+検索
 ![0b46cab1f1ec13d4aac532f591f4cf93](https://user-images.githubusercontent.com/60647249/78027738-d260bd80-7398-11ea-8350-5278b2446f48.gif)  
 
 # 今後の展望
